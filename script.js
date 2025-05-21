@@ -1,15 +1,14 @@
-// 1. Comparador de números:
-// Crie uma função chamada maiorNumero que recebe dois números como parâmetros.
-// Ela deve retornar o maior entre eles. Se forem iguais, retorne uma mensagem como "Os números são iguais!".
+// Verificador de Idade:
 
-numMaior(2, 2);
+// Crie uma função chamada podeDirigir que recebe a idade de uma pessoa como parâmetro.
+// Se a idade for igual ou maior que 18, retorne true. Caso contrário, retorne false.
+// Exemplo: podeDirigir(17) deve retornar false. podeDirigir(18) deve retornar true.
+podeDirigir(18);
 
-function numMaior(n1, n2) {
-    if (n1 > n2) {
-        console.log('Número 1 é o maior');
-    } else if (n2 > n1) {
-        console.log('Número 2 é o maior');
+function podeDirigir(idade) {
+    if (idade >= 18) {
+        return true;
     } else {
-        console.log('Os números são iguais!');
+        return false;
     }
 }
