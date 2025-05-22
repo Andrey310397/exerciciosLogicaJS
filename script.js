@@ -1,14 +1,14 @@
-// Verificador de Idade:
+// Calculador de IMC:
 
-// Crie uma função chamada podeDirigir que recebe a idade de uma pessoa como parâmetro.
-// Se a idade for igual ou maior que 18, retorne true. Caso contrário, retorne false.
-// Exemplo: podeDirigir(17) deve retornar false. podeDirigir(18) deve retornar true.
-podeDirigir(18);
+// Crie uma função chamada calcularIMC que recebe peso (em kg) e altura (em metros) como parâmetros.
+// A função deve calcular o Índice de Massa Corporal (IMC) usando a fórmula: $IMC = peso / (altura \* altura)$.
+// Retorne o valor do IMC.
+// Exemplo: calcularIMC(70, 1.75) deve retornar aproximadamente 22.85.
 
-function podeDirigir(idade) {
-    if (idade >= 18) {
-        return true;
-    } else {
-        return false;
-    }
+calcularIMC(70, 1.75);
+
+function calcularIMC(peso, altura) {
+    let imc = peso / (altura * altura);
+
+    console.log(imc);
 }
